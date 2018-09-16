@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #228B22;
+      height: 100%;
+       color: #fff;
+      padding: 5% ;
+      font-family: Montserrat, sans-serif;
+    }
+    .List{
+    	margin-left: 10%;
+    }
+    .dropdown-toggle ul li a img{
+    	padding: 100%;
+    }
+    .Patients ul li{
+    	display: inline-block;
+    }
+    .Patients ul li a img{
+    	width: 50%;
+    	padding: 0;
+    	margin: 0;
+    }
+    .glyphicon{
+    	padding: 2% 20% 2% 20%;
+    }
+
+    .jumbotron {
+      background-color: #228B22;
+      color: #fff;
+      padding: 20px 25px;
+      font-family: Montserrat, sans-serif;
+      margin: 0 0 0 0;
+  }
+    /* Set black background color, white text and some padding */
+    footer {
+    	text-align: center;
+      background-color: #228B22;
+      color: white;
+      margin-top: 2%;
+      padding: 2%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+nav {
+	border-radius: 0px;
+	padding: 0;
+	margin: 0;
+	background-color:  #228B22;
+}
+.nav li a{
+	color: white;
+}
+/*Prescription*/
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/*.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}*/
+
+button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+#patient_list ul li a{
+	padding-left: 30%;
+}
+#patient_list ul li button{
+	margin-left: 25%;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h3>Welcome</h3>      
+ 	<h1>Dr. Mustafa Qazi</h1>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li></ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav Patients">
+   <form class="form-inline" action="/action_page.php" style="padding-left: 0px;">
+	<div class="multi-field-wrapper">
+      <div class="multi-fields">
+        <div class="multi-field">
+ 
+		  <label for="Medicine">Enter Credentials: </label>
+        <input name="patient_id" autocomplete="off" type="text" id="patient_id" placeholder="Patient ID" value="" style="color: black;">
+
+        </div>
+      </div>
+      		<button type="submit">Submit</button>
+ 		 </div>
+ 		 </form>
+		<div class="dropdown" id="patient_list" style="margin-top: 3%;">
+		<button class="dropdown-toggle List" type="button" data-toggle="dropdown">
+			<h2>Patients List<span class="caret"></span></h2></button>
+		<ul class="dropdown-menu">
+	    <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+        <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+        <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+        <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+        <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+        <li><a href=""><img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg"></a><button class="btn glyphicon glyphicon-ok"></button></li>
+  
+		  </ul>
+		</div>
+	</div>
+
+           <!--  <ul class="nav nav-pills nav-stacked">
+       
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+ -->
+    <div class="col-sm-9">
+    	  <div class="col-sm-3">
+          <div class="well">
+            <img src="/home/masuta/Downloads/profile-user-silhouette_318-40557.jpg" style="width: 100%">
+          </div>
+        </div>
+    	 <div class="col-sm-9">
+    	   <h2>Details:</h2>
+      <hr>
+      <label>Name :</label><h2>Aditya Patil</h2>
+      <label>Blood Group :</label><h2>A+</h2>      
+  </div>
+     
+      <div class="row" style="margin: 25% 0 0 2%;">
+      	<h1>Previous Details: </h1> 
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>XYZ</h4>
+            <p>fdcyhboi</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>XYZ</h4>
+            <p>fdcyhboi</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>XYZ</h4>
+            <p>fdcyhboi</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>XYZ</h4>
+            <p>fdcyhboi</p>  
+          </div>
+        </div>
+      </div>
+
+<!-- Prescription section -->
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" data-toggle="modal" data-target="#myModal">Prescribe</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Prescirption</h4>
+        </div>
+        <div class="modal-body">
+   <form class="form-inline" action="/action_page.php">
+<div class="multi-field-wrapper">
+      <div class="multi-fields">
+        <div class="multi-field">
+ 
+		  <label for="Medicine">Medicine</label>
+		  <input type="text" id="Medicine" placeholder="Enter Medicine" name="Medicine">
+		  <label for="count">Count:</label>
+		  <input type="text" id="count" placeholder="Enter Count" name="count">
+          <button type="button" id="remove-field">Remove</button>
+		
+        </div>
+      </div>
+      		<button type="button" id="add-field">ADD FIELD</button>
+      		<button type="submit">Submit</button>
+ 		 </div>
+ 		 </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="container-fluid">
+  <p>Made with love by MAD!</p>
+</footer>
+<script type="text/javascript">
+$('.multi-field-wrapper').each(function() {
+    var $wrapper = $('.multi-fields', this);
+    $("#add-field", $(this)).click(function(e) {
+        $('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
+    });
+    $('.multi-field #remove-field', $wrapper).click(function() {
+        if ($('.multi-field', $wrapper).length > 1)
+            $(this).parent('.multi-field').remove();
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "niti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "multichain-node": "^2.2.0-version1.0.4"
+  }
+}

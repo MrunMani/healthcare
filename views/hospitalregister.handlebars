@@ -1,0 +1,96 @@
+<!-- Register -->
+<div role="tabpanel" class="tab-pane " id="patientRegister">
+<div id="form" class="form-area" style="text-align: left;"> 
+
+<form action="/hospital/hospitalregister" id="registrationForm" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_stream_token" />           
+
+<div class="form-padding">
+ <div class="form-group">
+        <label>Registration ID <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="regId" type="text" class="form-control" placeholder="Registration ID" required> 
+            </div> 
+        </div>
+    </div> 
+
+    <div class="form-group">
+        <label>Hospital Name <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="name" type="text" class="form-control" placeholder="First Name" required>
+            </div>
+        </div>
+    </div>
+
+     <div class="form-group">
+        <label>No. Of Doctors <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="docs" type="text" class="form-control" placeholder="" required> 
+            </div> 
+        </div>
+    </div> 
+ <div class="form-group">
+        <label>No. of Medical Consultants / Experts <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="consultants" type="text" class="form-control" placeholder="" required> 
+            </div> 
+        </div>
+    </div> 
+ <div class="form-group">
+        <label>Total No. of Beds <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="beds" type="text" class="form-control" placeholder="First Name">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>No. of Private Wards <i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="wards" type="text" class="form-control" placeholder="" required> 
+            </div> 
+        </div>
+    </div> 
+     <div class="form-group">
+        <label>No. of Beds for EWS (Economic Weaker Section)<i class="text-danger">*</i></label>
+        <div class="row">
+            <div class="col-sm-6">
+                <input name="ews" type="text" class="form-control" placeholder="" required> 
+            </div> 
+        </div>
+    </div> 
+
+    <div class="form-group">
+        <div class="form-check">
+        <label>Emergency Services <i class="text-danger">*</i></label>
+            <label class="radio-inline">
+            <input type="radio" name="val" value="Yes" active>Yes                                  </label>
+            <label class="radio-inline">
+            <input type="radio" name="val" value="No">No                                   </label>
+        </div> 
+    </div>
+
+    <div class="form-group">
+        <label>Proof of Resistration ID</label>
+        <input name="picture" type="file">
+    </div>
+
+    <div class="form-group">
+        <label>Address <i class="text-danger">*</i></label>
+        <textarea name="address" class="form-control" placeholder="Address"  rows="7"></textarea>
+    </div> 
+
+</div> 
+<div class="form-footer">
+    <div class="checkbox">
+        <label></label>
+    </div>
+    <button type="submit" id="submit" class="btn thm-btn">Submit</button>
+</div> 
+</form></div></div>
