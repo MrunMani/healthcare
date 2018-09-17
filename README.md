@@ -1,21 +1,13 @@
-# Node.js Loginapp
+Healthcare On Blockchain
 
-This is a user login and registration app using Node.js, Express, Passport and Mongoose. It is part of the YouTube series [here](https://www.youtube.com/watch?v=Z1ktxiqyiLA)
+Project for Niti Aayog Hackathon
 
-### Version
-1.1.0
+Technology stack:
+Node.js
+Multichains
+Spark
+Html/CSS/JS
+Python
 
-### Usage
-
-
-### Installation
-
-Loginapp requires [Node.js](https://nodejs.org/) v4+ to run.
-
-```sh
-$ npm install
-```
-
-```sh
-$ npm start
-```
+Site depoyed on:
+currently not deployed
