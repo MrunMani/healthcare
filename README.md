@@ -18,7 +18,6 @@ currently not deployed
 
 ### Algorythms used: 
 
-( Not deployed here for privacy concerns )
 
 Consensus Proof of Stake
 
