@@ -1,6 +1,6 @@
 # Healthcare On Blockchain
 
-## Project for Niti Aayog Hackathon
+## Project for Niti Aayog Pune Hackathon 2018
 
 ### Technology stack:
 Node.js
